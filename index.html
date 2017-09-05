@@ -82,7 +82,18 @@
           This sentence is about the while-away bird.
         </p>
       </div>
+      <div class="lesson">
+        <h3>Other Filters</h3>
+        <p>
+          The things we used earlier, like <code>:first</code> and <code>:last</code>, are known as filters. We use filters to zero in on specific elements in the tags.
+        </p>
 
+        <ul id="filters">
+          <li><code>$("#classes-ids li:gt(1)")</code> will retrieve any list items under the ID "classes-ids" that has an index position greater than 1.</li>
+          <li><code>$("#classes-ids li:not(li:eq(2))")</code> will get every item under the ID "classes-ids" that is not equal to index position 2.</li>
+
+        </ul>
+      </div>
 
       <div class="lesson">
         <h3>Generational Ties</h3>

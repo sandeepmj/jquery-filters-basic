@@ -23,6 +23,13 @@ $("document").ready(function () {
 	// $("p[id^=whi]").css("border", "4px solid #ff8000");
 	// $("p[id^=whit]").css("border", "4px solid #ff8000");
 
+	//OTHER FILTERS
+
+	// $("#classes-ids li:gt(1)").css("border", "1px solid #ff8000");
+
+	// $("#classes-ids li:not(li:eq(2))").css("border", "1px solid #ff8000");
+
+
 
 	//GENERATIONAL THING
 
@@ -38,21 +45,6 @@ $("document").ready(function () {
 	//Select the next specified element (in following case 'p') if it is preceeded by a specific element (in this case "ul").
 	// $("ul + p").css("border", "4px solid #ff8000");
 
-
-	// $(".lesson p").css("border", "3px solid #ff8000");
-	// $(".lesson li").css("border", "3px solid #ff8000");
-	// $(".lesson li:first").css("border", "3px solid #ff8000");
-	// $(".lesson li:last").css("border", "3px solid #ff8000");
-	// $(".lesson li:gt(1)").css("border", "3px solid #ff8000");
-
-
-	//$("#example p:last").css("border", "3px solid #ff8000");
-	//$("#example p:even").css("border", "3px solid #ff8000");
-	//$("#example p:odd").css("border", "3px solid #ff8000");
-	//$("#example .a:first").css("border", "3px solid #ff8000");
-	//$("#example .b:even").css("border", "3px solid #ff8000");
-	//$("#example p:gt(1)").css("border","3px solid #ff8000");
-	//$("#example p:not(p:eq(2))").css("border", "3px solid #ff8000");
 
 
 });
