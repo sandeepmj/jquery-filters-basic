@@ -1,0 +1,20 @@
+body {
+  font-family: Georgia;
+  font-size: 1.2em;
+  padding: 20px;
+}
+
+#main-container {
+  width: 45%;
+  margin: auto;
+}
+
+code {
+  background-color: #e8e8e8;
+  border: 1px solid #a8a8a8;
+  border-radius: 3px;
+  padding: 1pt 2pt;
+  margin: 2pt;
+  font-family: "source-code-pro", Consolas, monospace;
+  font-size: .9em;
+}

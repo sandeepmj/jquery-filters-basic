@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <!-- Remember to update page title -->
+    <title>jQuery Filters - Basic</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div id="main-container">
+
+
+      <h1>jQuery Filters - Basic</h1>
+      <p>
+        We can use jQuery filters to target specific content on a page.
+      </p>
+      <p>
+        We can then manipulate, change or gather that content.
+      </p>
+      <div class="lesson">
+        <h3>
+      Targeting Tags
+    </h3>
+        <p>
+          We can target all tags such as <code>p</code> tag, <code>div</code> tag, <code>h1</code>, <code>h2</code> tags, etc.</p>
+        <ul id="tags">
+          <li class="doggy"><code>$("p")</code> will select <strong>all</strong> &lt;p&gt; tags.</li>
+          <li class="doggy"><code>$("p:first")</code> will target only the <strong>first</strong> &lt;p&gt; tag.</li>
+          <li class="doggy"><code>$("p:even")</code> will return all the <strong>even-number</strong> &lt;p&gt; tags</li>
+          <li class="doggy"><code>$("p:odd")</code> will return all the <strong>odd-number</strong> &lt;p&gt; tags</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Your javascript should be called here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+
+</html>
