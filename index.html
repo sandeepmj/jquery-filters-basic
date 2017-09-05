@@ -24,10 +24,12 @@
 
   <body>
     <!-- YOUR CONTENT GOES HERE -->
+
     <div id="main-container">
 
 
-      <h1>jQuery Filters - Basic</h1>
+      <h1>jQuery Filters</h1>
+      <h3>An intro (also h3 header)</h3>
       <p>
         We can use jQuery filters to target specific content on a page.
       </p>
@@ -54,9 +56,12 @@
         </p>
 
         <ul id="classes-ids">
-          <li>[<i>attr</i>]: element has an attribute named <i>attr</i></li>
-          <li>[<i>attr</i>=val]: element has an attribute whose value is "val"</li>
-          <li>[<i>attr</i>^=val]: element has an attribute whose value starts with "val"</li>
+          <li><code>$("[class]")</code> will retrieve every class on the page. Not too useful.</li>
+          <li><code>$("[id]")</code> will retrieve every ID on the page. Also pretty worthless.</li>
+          <li><code>$("p[class]")</code> or <code>$("p[id]")</code> adds a tag to narrow down to classes or IDs with a specific tag.</li>
+          <li><code>$("p[class=nameOfClassHere]")</code> targets a tag with a specific class. <span class="highlight">Works with ID too.</span></li>
+          <li><code>$("p[id^=partialNameOfIdHere]")</code> targets an ID that begins with certain letters. The <span class="highlight">^</span> denotes "starts with."
+          </li>
         </ul>
 
 
@@ -73,7 +78,45 @@
         <p class="puppy" id="white-puppy">
           This sentence is about a cute white puppy.
         </p>
+        <p class="bird" id="while-away">
+          This sentence is about the while-away bird.
+        </p>
+      </div>
 
+
+      <div class="lesson">
+        <h3>Generational Ties</h3>
+        <p>
+          We can target specific ancestors, descendents and siblings. Checkout this illustration:
+        </p>
+        <img src="images/generations.jpg" width="150%" />
+
+        <ul id="generations">
+          <li><code>$("#black-van ~ p")</code> will retrieve every sibling p tag after a specified element (in this case the black-van ID).</li>
+          <li><code>$("div.lesson > h3")</code> will retrieve every h3 on the page that is a child of a div class "lesson".</li>
+          <li><code>$("div#main-container > h3")</code> will retrieve every h3 on the page that is a child of a div with ID "main-container".</li>
+
+        </ul>
+        <p class="car" id="black-car">
+          This sentence is about a fast black car.
+        </p>
+        <p class="van" id="black-van">
+          This sentence is about a massive black van.
+        </p>
+        <p class="car" id="white-car">
+          This sentence is about a fast white car.
+        </p>
+        <p class="van" id="white-van">
+          This sentence is about a massive white van.
+        </p>
+
+      </div>
+      <h3>This h3 tag is outside the div that has the class "lesson".</h3>
+      <div class="lesson">
+        <h3>Many More Selectors</h3>
+        <p>
+          You'll find many <a href="https://api.jquery.com/category/selectors/" target="_blank">more selectors here</a> to target just about any specific element on a web page.
+        </p>
       </div>
     </div>
 
