@@ -9,6 +9,10 @@ body {
   margin: auto;
 }
 
+h3 {
+  padding-top: 1em;
+}
+
 code {
   background-color: #e8e8e8;
   border: 1px solid #a8a8a8;
@@ -17,4 +21,14 @@ code {
   margin: 2pt;
   font-family: "source-code-pro", Consolas, monospace;
   font-size: .9em;
+}
+
+.highlight {
+  background-color: #ffff00;
+  padding: 1px;
+}
+
+.highlight2 {
+  background-color: #00ffbf;
+  padding: 1px;
 }

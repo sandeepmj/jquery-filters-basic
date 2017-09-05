@@ -39,13 +39,41 @@
       Targeting Tags
     </h3>
         <p>
-          We can target all tags such as <code>p</code> tag, <code>div</code> tag, <code>h1</code>, <code>h2</code> tags, etc.</p>
+          We can target all tags such as <code>p</code> tag, <code>div</code> tag, <code>strong</code> tag, and <code>h1</code>, <code>h2</code> tags, etc.</p>
         <ul id="tags">
-          <li class="doggy"><code>$("p")</code> will select <strong>all</strong> &lt;p&gt; tags.</li>
-          <li class="doggy"><code>$("p:first")</code> will target only the <strong>first</strong> &lt;p&gt; tag.</li>
-          <li class="doggy"><code>$("p:even")</code> will return all the <strong>even-number</strong> &lt;p&gt; tags</li>
-          <li class="doggy"><code>$("p:odd")</code> will return all the <strong>odd-number</strong> &lt;p&gt; tags</li>
+          <li class="doggy"><code>$("p")</code> will select <span class="highlight">all &lt;p&gt;</span> tags.</li>
+          <li class="doggy"><code>$("p:first")</code> will target <span class="highlight2">only the &lt;p&gt;</span> tag.</li>
+          <li class="doggy"><code>$("p:even")</code> will return all the <span class="highlight">even-number &lt;p&gt;</span> tags</li>
+          <li class="doggy"><code>$("p:odd")</code> will return all the <span class="highlight2">odd-number &lt;p&gt;</span> tags</li>
         </ul>
+      </div>
+      <div class="lesson">
+        <h3>Returning Classes and IDs</h3>
+        <p>
+          We can target tags that have specific classes or IDs.
+        </p>
+
+        <ul id="classes-ids">
+          <li>[<i>attr</i>]: element has an attribute named <i>attr</i></li>
+          <li>[<i>attr</i>=val]: element has an attribute whose value is "val"</li>
+          <li>[<i>attr</i>^=val]: element has an attribute whose value starts with "val"</li>
+        </ul>
+
+
+
+        <p class="kitten" id="black-kitten">
+          This sentence is about a cute black kitten.
+        </p>
+        <p class="puppy" id="black-puppy">
+          This sentence is about a cute black puppy.
+        </p>
+        <p class="kitten" id="white-kitten">
+          This sentence is about a cute white kitten.
+        </p>
+        <p class="puppy" id="white-puppy">
+          This sentence is about a cute white puppy.
+        </p>
+
       </div>
     </div>
 
