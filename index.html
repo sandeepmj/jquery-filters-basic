@@ -54,9 +54,12 @@
         </p>
 
         <ul id="classes-ids">
-          <li>[<i>attr</i>]: element has an attribute named <i>attr</i></li>
-          <li>[<i>attr</i>=val]: element has an attribute whose value is "val"</li>
-          <li>[<i>attr</i>^=val]: element has an attribute whose value starts with "val"</li>
+          <li><code>$("[class]")</code> will retrieve every class on the page. Not too useful.</li>
+          <li><code>$("[id]")</code> will retrieve every ID on the page. Also pretty worthless.</li>
+          <li><code>$("p[class]")</code> or <code>$("p[id]")</code> adds a tag to narrow down to classes or IDs with a specific tag.</li>
+          <li><code>$("p[class=nameOfClassHere]")</code> targets a tag with a specific class. <span class="highlight">Works with ID too.</span></li>
+          <li><code>$("p[id^=partialNameOfIdHere]")</code> targets an ID that begins with certain letters. The <span class="highlight">^</span> denotes "starts with."
+          </li>
         </ul>
 
 
@@ -72,6 +75,15 @@
         </p>
         <p class="puppy" id="white-puppy">
           This sentence is about a cute white puppy.
+        </p>
+        <p class="bird" id="while-away">
+          This sentence is about the while-away bird.
+        </p>
+      </div>
+      <div class="lesson">
+        <h3>Generational Ties</h3>
+        <p>
+          We can target specific ancestors, descendents and siblings. Checkout this illustration:
         </p>
 
       </div>
