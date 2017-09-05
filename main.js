@@ -26,8 +26,18 @@ $("document").ready(function () {
 
 	//GENERATIONAL THING
 
+	//select immediate children of the parent, in this case all the h3 tags in a div class lesson
+	// $("div.lesson > h3").css("border", "4px solid #ff8000");
+
+	//Works for IDs too. select immediate children of the parent, in this case all the h3 tags in a div ID main-container
+	// $("div#main-container > h3").css("border", "4px solid #ff8000");
+
 	//Select all next siblings after a previous element
-	// $("#black-kitten ~ p").css("border", "4px solid #ff8000");
+	// $("#black-van ~ p").css("border", "4px solid #ff8000");
+
+	//Select the next specified element (in following case 'p') if it is preceeded by a specific element (in this case "ul").
+	// $("ul + p").css("border", "4px solid #ff8000");
+
 
 	// $(".lesson p").css("border", "3px solid #ff8000");
 	// $(".lesson li").css("border", "3px solid #ff8000");
